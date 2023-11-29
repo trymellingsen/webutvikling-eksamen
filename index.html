@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="https://kit.fontawesome.com/7d75c073e6.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Eksamen</title>
 </head>
 <body>
     <header>
         <nav>
             <span class="logo">
                 <a href="index.html">
-                    <img src="images/logo1.png" alt="logo">
+                    <img src="images/logo1.png" alt="logo-header">
                 </a>
             </span>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About</a></li>
-                <li id="contact-menypunkt"><a href="#">Contact</a></li>
+                <li><a href="products.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="contact-menypunkt"><a href="about.html#about-contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-    <main id="main-forside">
         <section id="index-section-1">
             <h1>Compeling headline</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
-            <a href="">Read more about our services</a>
+            <a href="#services-section">Read more about our services</a>
         </section>
+    </header>
+    <main id="main-forside">
         <section id="index-section-2">
             <h2>Enganging subheading. What can you help your visitors with</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
@@ -38,17 +38,19 @@
             </p>
         </section>
         <section id="index-section-3">
-            <img src="images/placehold-400x400.svg" alt="">
+            <!--Funnet bilde her (gjelder også alle placehold bildene jeg har brukt): https://placehold.co/-->
+            <img src="images/placehold-400x400.svg" alt="placehold-1">
             <article>
                 <h2>About our company</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 </p>
-                <a href="">Read more about us</a>
+                <a href="about.html">Read more about us</a>
             </article>
         </section>
-        <section id="index-section-4">
+        <section class="index-section-services" id="services-section">
             <h2>Our services</h2>
+            <!--Kunne lagt en section istedenfor en div, men med div så slipper jeg blandt annet en warning på missing header i section-->
             <div>
                 <article>
                     <i class="fa-solid fa-users"></i>
@@ -72,7 +74,7 @@
                 </article>
             </div>
         </section>
-        <section id="index-section-5">
+        <section id="index-section-4">
             <h2>Sign up for our newsletter</h2>
             <form>
                 <input type="email" placeholder="Nora@epost.no">
@@ -84,14 +86,14 @@
         <nav>
             <span class="logo">
                 <a href="index.html">
-                    <img src="images/logo1.png" alt="logo">
+                    <img src="images/logo1.png" alt="logo-footer">
                 </a>
             </span>
             <p>Companyrights companyname 2023</p>
             <ul>
-                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
             </ul>
         </nav>
     </footer>

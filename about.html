@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/7d75c073e6.js" crossorigin="anonymous"></script>
+    <title>Eksamen</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="logo-header">
+                </a>
+            </span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li id="contact-menypunkt"><a href="about.html#about-contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="about-section-1">
+            <article>
+                <p>Company name</p>
+                <h1>About our company</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                </p>
+                <a href="#about-contact">Get in touch with us</a>
+            </article>
+        </section>
+    </header>
+    <main id="main-about">
+        <section class="index-section-services">
+            <h2>Our services</h2>
+            <!--Kunne lagt en section istedenfor en div, men med div så slipper jeg blandt annet en warning på missing header i section-->
+            <div>
+                <article>
+                    <i class="fa-solid fa-users"></i>
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <h3>Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+                <article>
+                    <i class="fa-solid fa-wifi"></i>
+                    <h3>Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </article>
+            </div>
+        </section>
+        <section id="about-section-2">
+            <h2>Some of our clients</h2>
+            <article>
+                <img src="images/logo1.png" alt="logo-1">
+                <img src="images/logo2.png" alt="logo-2">
+                <img src="images/logo3.png" alt="logo-3">
+            </article>
+        </section>
+        <h2 id="about-contact">Contacts us</h2>
+        <section id="about-section-3">
+            <article>
+                <h3>Send us a message</h3>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Ola Nordmann..">
+                </form>
+                <form>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="Branding..">
+                </form>
+                <form>
+                    <label for="message">Message</label>
+                    <!--Brukte denne kilden for å finne "message" boksen: https://www.w3schools.com/tags/tag_textarea.asp-->
+                    <textarea id="message" rows="7"></textarea>
+                </form>
+                <button>Send message</button>
+            </article>
+            <article>
+                <h3>Contacts information</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam
+                </p>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-pin"></i>
+                        <p>B R A Veien 4, 1757 Halden</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>69 60 80 00</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="#">postmottak@hiof.no</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!--Funnet fra google maps, og "bygg inn et kart" funksjonen: https://www.google.com/maps/place/B+R+A+Veien+4,+1757,+1783+Halden/@59.1288799,11.3497867,17z/data=!3m1!4b1!4m5!3m4!1s0x464412f6cf4d491d:0x4495a486ebe83bb4!8m2!3d59.1288772!4d11.3523616?entry=ttu-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.2104093291875!2d11.349786676137555!3d59.12887992705068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f6cf4d491d%3A0x4495a486ebe83bb4!2sB%20R%20A%20Veien%204%2C%201757%2C%201783%20Halden!5e0!3m2!1sno!2sno!4v1701121881645!5m2!1sno!2sno" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+    <footer>
+        <nav>
+            <span class="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" alt="logo-footer">
+                </a>
+            </span>
+            <p>Companyrights companyname 2023</p>
+            <ul>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

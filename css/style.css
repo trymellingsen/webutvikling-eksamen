@@ -12,10 +12,10 @@ body {
 header {
     grid-area: header;
     grid-column: span 3;
-    padding: 1rem;
 }
 
 header nav {
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,14 +32,9 @@ header nav ul {
     list-style: none;
 }
 
-
 header nav ul li {
     padding: 1rem;
     list-style: none;
-}
-
-header nav ul li:active {
-    background-color: #e6bd43;
 }
 
 header nav ul li a {
@@ -52,13 +47,99 @@ header nav ul #contact-menypunkt {
     font-weight: bold;
 }
 
+header #index-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(218, 217, 217);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+header #index-section-1 h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header #index-section-1 p {
+    width: 60%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+header #index-section-1 a {
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #e6bd43;
+}
+/*Funnet bakgrunnsbilde her (gjelder også bakgrunn på about.html): https://pixabay.com/no/photos/penn-notisbok-notisblokk-dagbok-4337521/ */
+/*Brukte disse kildene til bakgrunnsbilde for products- og about-html: https://www.youtube.com/watch?v=znqUwx0b0HI , https://www.w3schools.com/cssref/pr_background-blend-mode.php */
+header #products-section-1 {
+    background-image: url("../images/eksamen-bakgrunn-google.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(181, 178, 178, 0.644);
+    background-blend-mode: lighten;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+header #products-section-1 h1 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header #about-section-1 {
+    background-image: url("../images/eksamen-bakgrunn-google.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header #about-section-1 article {
+    background-color: rgba(255, 255, 255, 0.836);
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: 3rem;
+    padding: 2rem;
+}
+
+header #about-section-1 article h1 {
+    font-weight: 800;
+    margin: 0;
+}
+
+header #about-section-1 article a {
+    text-decoration: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #000;
+    background-color: #e6bd43;
+    width: 40%;
+    text-align: center;
+}
 /*Header på alle sidene (slutt) */
 
 /*Footer på alle sidene (start)*/
 footer {
     grid-area: footer;
     grid-column: span 3;
-    background-color: #000;
+    background-color: #252525;
     padding: 1rem;
 }
 
@@ -88,42 +169,40 @@ footer nav ul li a {
 }
 /*Footer på alle sidene (slutt)*/
 
+/*Our services forside og about (start)*/
+.index-section-services {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.index-section-services h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.index-section-services div {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.index-section-services article {
+    text-align: center;
+}
+
+.index-section-services article i {
+    font-size: 2rem;
+}
+/*Our services forside og about (start)*/
+
 /*Main på forsiden (start)*/
 main {
     grid-area: main;
     grid-column: span 3;
-}
-
-#main-forside #index-section-1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: beige;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-#main-forside #index-section-1 h1 {
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#main-forside #index-section-1 p {
-    width: 60%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#main-forside #index-section-1 a {
-    text-decoration: none;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #000;
-    background-color: #e6bd43;
 }
 
 #main-forside #index-section-2 {
@@ -181,47 +260,19 @@ main {
 }
 
 #main-forside #index-section-4 {
-    padding-bottom: 3rem;
+    align-items: center;
+    background-color: rgb(218, 217, 217);
+    text-align: center;
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 #main-forside #index-section-4 h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-}
-
-#main-forside #index-section-4 div {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-#main-forside #index-section-4 article {
-    text-align: center;
-}
-
-#main-forside #index-section-4 article i {
-    font-size: 2rem;
-}
-
-#main-forside #index-section-5 {
-    align-items: center;
-    background-color: beige;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-}
-
-#main-forside #index-section-5 h2 {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-#main-forside #index-section-5 form input {
+#main-forside #index-section-4 form input {
     height: 3rem;
     border: none;
     padding-left: 1rem;
@@ -229,8 +280,159 @@ main {
     margin: 0;
 }
 
-#main-forside #index-section-5 form #input-knapp {
+#main-forside #index-section-4 form #input-knapp {
     background-color: #e6bd43;
     font-weight: 800;
 }
 /*Main på forsiden (slutt)*/
+
+/*Main på products (start)*/
+#main-products {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#main-products section {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+#main-products h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: #e6bd43 solid 3px;
+}
+
+/*I følge E kravet, skulle det ha vært en max-width på 350 px her. Om jeg legger det til, vil ikke noen av radene dekke hele bredden*/
+/*For å få en bedre forståelse av basis, shrink, grow har jeg brukt denne kilden: https://www.youtube.com/watch?v=sanswTlz4ZY */
+#main-products article {
+    min-width: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+}
+
+#main-products #products-section-2 article a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border: #000 solid 1px;
+}
+
+#main-products section article img {
+    width: 100%;
+}
+
+#main-products #products-section-2{
+    padding-bottom: 1rem;
+}
+
+#main-products #products-section-3 #products-section-3-stor {
+    flex-grow: 1; 
+    max-width: 692px;
+}
+/*Main på products (slutt)*/
+
+/*Main på products (start)*/
+#main-about #about-section-2 {
+    background-color: #e6bd43;
+    text-align: center;
+}
+
+#main-about #about-section-2 h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-top: 5rem;
+}
+
+#main-about #about-section-2 img {
+    padding: 1rem;
+    padding-bottom: 3rem;
+    width: 8rem;
+}
+
+#main-about #about-contact {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin: 0;
+    background-color: rgb(241, 241, 241);
+}
+
+#main-about #about-section-3 {
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 2rem;
+}
+
+#main-about #about-section-3 article {
+    width: 35%;
+}
+
+#main-about #about-section-3 article h3 {
+    font-weight: 800;
+}
+
+#main-about #about-section-3 article input {
+    width: 100%;
+    border: none;
+}
+
+#main-about #about-section-3 article form #message {
+    width: 100%;
+    border: none;
+    margin-top: 0.5rem;
+}
+
+#about-section-3 article form input {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 2.5rem;
+}
+
+
+#main-about #about-section-3 article button {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    font-weight: 800;
+    background-color: #e6bd43;
+    border: none;
+}
+
+#main-about #about-section-3 article {
+    font-size: 1.2rem;
+}
+
+#main-about #about-section-3 ul {
+    padding: 0;
+}
+
+#main-about #about-section-3 ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    color: #474747;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#main-about #about-section-3 ul i {
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#main-about iframe {
+    width: 100%;
+    height: 20rem;
+}
+/*Main på products (slutt)*/
